@@ -19,3 +19,7 @@ test('Test that the second parameter is not equal to NaN',()=>{
 test('Test that the second parameter is not equal to Infinity',()=>{
     expect(div(23,Infinity)).toBe('you are not allowed');
 });
+
+test('Test that the second parameter is not equal to -Infinity',()=>{
+    expect(div(23,-Infinity)).toBe('you are not allowed');
+});
