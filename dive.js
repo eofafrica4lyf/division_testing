@@ -1,5 +1,7 @@
 function divide(firstNumber, secondNumber){
-    return '..';
+    if(typeof(firstNumber) !== 'number' || typeof(secondNumber) !== 'number'){
+        return 'only numbers are allowed';
+    }
 }
 
 module.exports = divide;
