@@ -10,4 +10,8 @@ test('test that the parameters are numbers',()=>{
 
 test('Test that the second parameter is not equal to zero',()=>{
     expect(div(23,0)).toBe('you are not allowed');
-})
+});
+
+test('Test that the second parameter is not equal to NaN',()=>{
+    expect(div(23,NaN)).toBe('you are not allowed');
+});
