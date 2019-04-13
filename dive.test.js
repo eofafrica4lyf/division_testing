@@ -23,3 +23,9 @@ test('Test that the second parameter is not equal to Infinity',()=>{
 test('Test that the second parameter is not equal to -Infinity',()=>{
     expect(div(23,-Infinity)).toBe('you are not allowed');
 });
+
+test('test for division of floats and integers',()=>{
+    expect(div(1.4,0.7)).toBe(2.0);
+    expect(div(23,2)).toBe(11.5);
+});
+
